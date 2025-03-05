@@ -1,6 +1,7 @@
 --
--- minimal http server
--- request handler
+-- minimalist http server / request handler
+-- 
+-- github.com/hipbali
 --
 
 package.path=package.path.."?.lua;lib/?.lua;"
@@ -8,7 +9,6 @@ package.cpath=package.cpath.."lib/?.so;lib/?.dll;"
 
 -- global JSON
 json = require "json"
-sqlite = require "sqlite"
 
 local mime_types = {
     html = "text/html",
